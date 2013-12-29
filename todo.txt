@@ -1,0 +1,42 @@
+1. improve my self description
+2. add animation to my works
+3. improve the navbar.
+4. fix the bug of scrollspy that when click a menu, the section of the page cannot jump properly.
+5. add footer.
+
+========================
+
+Portfolo site
+
+for animation
+http://www.greensock.com
+
+for touchability
+http://eightmedia.github.io/hammer.js/
+
+
+Design the layout of my portfolo like google 
+http://www.google.com/intl/en-GB/landing/holidayapps/desktop/#utm_source=hpp
+
+set my summary on the top
+place my portfolio undernether it with cool amination using greensock.
+
+-------------
+scss live edit
+
+http://net.tutsplus.com/tutorials/html-css-techniques/developing-with-sass-and-chrome-devtools/
+
+https://developers.google.com/chrome-developer-tools/docs/css-preprocessors#toc-requirements
+
+https://plus.google.com/+AddyOsmani/posts/Q3myXcQsKCr
+
+-------------
+practice using sublimeLinter and see how can I config it
+https://github.com/SublimeLinter/SublimeLinter
+
+-------------
+career planing advice from a great frontend developer
+
+http://blog.jobbole.com/53812/
+
+http://www.nczonline.net/blog/2013/10/15/the-best-career-advice-ive-received/
