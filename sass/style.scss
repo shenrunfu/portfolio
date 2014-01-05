@@ -1,36 +1,30 @@
 @import "compass/css3";
-
-$text-color : #444;
-$page-background : #f5f5f5;
-$blue : #327fc7;
-$gray : #ddd;
-
-$navHeight : 40px;
-$myselfHeight : 400px;
-$myselfHeightLarge : 432px;
-$avatorSmallWidth : 80px;
-
-$workItemHeight : 150px;
-$circleWith : 65px;
-$borderRadius : 5px;
+@import "mixin";
+@import "vars";
 
 *{
     box-sizing : border-box;
 }
-@mixin zero(){
-    margin : 0;
-    padding : 0; 
+
+a{
+  &:hover{
+    cursor: pointer;
+    @include transition(all 0.2s ease-in-out 0s);
+  }
 }
 .circle{
     width: $circleWith;
     height: $circleWith;
-    @include border-radius(50px);
+
+    @include border-radius($circleWith);
     text-align: center;
     display: inline-block;
-    border: solid 1px #e5e5e5;
-
+//    border: solid 1px #e5e5e5;
+    background: $blueFlatLight;
     .icon{
         line-height : $circleWith;
+        color : $blueFlatShadow;
+
         @include transition(all 0.2s ease-in-out 0s);
         &:hover{
             @include scale(1.2);
@@ -40,7 +34,13 @@ $borderRadius : 5px;
 
 body{
     background-color : #f5f5f5;
+    font-size: $fontSize;
+    color : #ffffff;
 }
+body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+  font-family: "Exo 2", Helvetica,Arial,sans-serif;
+}
+
 #topBar{
     height : $navHeight;
     border-bottom : solid 2px $blue;
@@ -61,22 +61,22 @@ body{
 
         .twitter{
             margin : 0 20px;
+
         }
     }
     #myself{
         text-align : center;
         height: $myselfHeight;
         padding : $myselfHeight/5 25px 10px;
-        background : url('images/header-bg.png') 0 0 repeat;
-
-        .avator{
-            width : $avatorSmallWidth;
-        }
-
+//        background : url('../images/header-bg.png') 0 0 repeat;
+        background: $blueFlat;
         #myself-text{
             color : $text-color;
             margin-top : 15px;
         }
+    }
+    .avatar{
+      width : $avatarWidth;
     }
 
     #work{
@@ -85,31 +85,35 @@ body{
         .work-item{
             position : relative;
             margin : 0 0 10px 0 ;
+            display: inline-block;
+        }
 
-            .work-thumbnail{
-                border: 1px solid $gray;
-                @include border-radius($borderRadius);
-                background-color : #fff;
-                padding : 5px;
-                img{
-                    width : 100%;
-                    height : 100%;
-                }
-            }
-            .work-link{
-                position : absolute;
-                left : 5px;
-                bottom: 0;
-                span{
-                    font-size: 20px;
-                    text-decoration: none;
-                    color: white;
-                    cursor:pointer;
-                    &:hover{
-                        color: $blue;
-                    }
-                }
-            }
+        .work-thumbnail{
+          border: 1px solid $gray;
+          @include border-radius($borderRadius);
+          background-color : #ffffff;
+          padding : $workThumbnailPadding;
+          img{
+            max-width : $maxWidth;
+            width: 100%;
+            height : 100%;
+          }
+        }
+
+        .work-link{
+          position : absolute;
+          left : $workThumbnailPadding;
+          bottom: $workThumbnailPadding;
+
+          font-size: 20px;
+          color: white;
+
+          a{
+            text-decoration: none;
+            color : #ffffff;
+            cursor:pointer;
+
+          }
         }
     }
 

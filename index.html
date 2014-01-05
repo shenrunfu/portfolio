@@ -1,153 +1,215 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>Daniel Shen's Portfolio</title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Daniel Shen's Portfolio</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,600' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleTablet.css">
 
 </head>
 <!-- the offset should be the same as the navbar's height -->
 <body data-spy="scroll" data-target="#topBar" data-offset="0">
-	<nav id="topBar" class="nav navbar-default navbar-fixed-top" role="navigation">
-		<ul class="nav nav-pills">
-			<li><a href="#myself">About me</a></li>
-			<li><a href="#work">Work</a></li>
-			<li><a href="#resume">Resume</a></li>
-		</ul>
-	</nav>
+<nav id="topBar" class="nav navbar-default navbar-fixed-top" role="navigation">
+    <ul class="nav nav-pills">
+        <li><a href="#myself">About me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#resume">Resume</a></li>
+    </ul>
+</nav>
 
-	<div class="content">
-		<section id="myself">
-			<a href="#myself">
-				<img src="images/avator.jpg" alt="avator" class="img-circle avator">
-			</a>
-			
-			<div id="myself-text">
-				<p>Hi, my name is Daniel Shen and a web developer. I am interested in fontend development and also have skills in backend develpment using PHP.</p>
-			</div>
-			<div class="sn row">
-				<div class="sn-item circle linkedin">
-					<a href="http://au.linkedin.com/pub/daniel-shen/26/479/889/"><i class="icon fa fa-linkedin fa-2x"></i></a>
-				</div>
-				<div class="sn-item circle twitter">
-					<a href="http://twitter.com/Daniel__Shen"><i class="icon fa fa-twitter fa-2x"></i></a>
-				</div>
-				<div class="sn-item circle stack-overflow">
-					<a href="http://stackoverflow.com/users/2435409/daniel-shen"><i class="icon fa fa-stack-overflow fa-2x"></i></a>
-				</div>
-			</div>
+<div class="content">
+    <section id="myself">
+        <a href="#myself">
+            <img src="images/avator.jpg" alt="avatar" class="img-circle avatar">
+        </a>
 
-		</section>
-		<section id="work">
-			<h4>MY WORKS</h4>
-			<p>I have lots of skills in web development with PHP/Codeignitor/mySql and fontend tools like Angularjs, bootstrap, sass and etc. The following websites are my most recent works and they are built by myself from the ground up.</p>
-			<div class="work-item">
-				<div class="work-thumbnail">
-					<a href="http://www.realestategallery.com.au/">
-						<img src="images/reg-thumbnail.jpg" alt="Real Estate Gallery"></a>
-					</div>
+        <div id="myself-text">
+            <p>
+                Hi, my name is Daniel Shen and I am a web developer. I am interested in end-to-end development with
+                PHP as my main programing language at sever side.
+            </p>
+        </div>
+        <div class="sn row">
+            <div class="sn-item circle linkedin">
+                <a href="http://au.linkedin.com/pub/daniel-shen/26/479/889/"><i
+                        class="icon fa fa-linkedin fa-2x"></i></a>
+            </div>
+            <div class="sn-item circle twitter">
+                <a href="http://twitter.com/Daniel__Shen"><i class="icon fa fa-twitter fa-2x"></i></a>
+            </div>
+            <div class="sn-item circle stack-overflow">
+                <a href="http://stackoverflow.com/users/2435409/daniel-shen"><i
+                        class="icon fa fa-stack-overflow fa-2x"></i></a>
+            </div>
+        </div>
 
-					<div class="work-link">
-						<span>Real Estate Gallery</span>
-					</div>
-					<div class="work-description hide">
-						Original Design and color scheme. Build with Codeignitor and ipad friendly.
-					</div>
-				</div>
-				<div class="work-item">
-					<div class="work-thumbnail">
-						<a href="http://www.thecrealestate.com.au/">
-							<img src="images/thec-thumbnail.jpg" alt="The C Real Estate">
-						</a>
-					</div>
+    </section>
+    <section id="work">
+        <h2>MY WORKS</h2>
 
-					<div class="work-link">
-						<span>The C Real Estate</span>
-					</div>
-					<div class="work-description hide">
-						Original Design and color scheme. Build with Codeignitor and ipad friendly.
-					</div>
-				</div>
-				<div class="work-item">
-					<div class="work-thumbnail">
-						<a href="http://www.multilink.com.au/webmultilink/"><img src="images/weblink-thumbnail.jpg" alt="Weblink">
-						</a>
-					</div>
+        <p class="my-work-description">
+            I have lots of skills in web development with
+            PHP/Codeignitor/mySql and fontend tools like Angularjs,
+            bootstrap, sass and etc. The following websites
+            are my most recent works and they are built by
+            myself from the ground up.
+        </p>
 
-					<div class="work-link">
-						<span>Weblink</span>
-					</div>
-					<div class="work-description hide">
-						CRM system for real estate agents, built from the ground up with Codeignitor. Tablet and mobile friendly. 
-					</div>
-				</div>
-			</section>
-			<section id="resume">
-				<h4>MORE ABOUT ME</h4>
-				<ul class="nav nav-tabs row">
-					<li class="col-xs-4 active"><a href="#education" data-toggle="tab">Education</a></li>
-					<li class="col-xs-4"><a href="#working-experience" data-toggle="tab">Experience</a></li>
-<li class="col-xs-4"><a href="#skills" data-toggle="tab">Skills</a></li>
-				</ul>
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <a href="http://www.realestategallery.com.au/">
+                            <span data-picture data-alt="Real Estate Gallery">
+                                <span data-src="images/reg-thumbnail.jpg"></span>
+                                <span data-src="images/reg-thumbnail-medium.jpg" data-media="(min-width: 768px)"></span>
 
-				<div class="tab-content">
-					<div class="tab-pane active" id="education"><p><strong>Royal Melbourne Institute of Technology,</strong></p><p>Master Degree of Information Technology, March 2011 - June 2012, GPA 3.2 / 5.0</p>
+                                <noscript>
+                                    <img src="images/reg-thumbnail.jpg" alt="Real Estate Gallery">
+                                </noscript>
+                            </span>
+                </a>
+            </div>
 
-						<p>South China Agricultural University</p>
-						<p>Bachelor Degree of Software Engineer, GPA 3.0 / 5.0</p>
+            <div class="work-link">
+                <a href="http://www.realestategallery.com.au/">Real Estate Gallery</a>
+            </div>
+            <div class="work-description hide">
+                Original Design and color scheme. Build with Codeignitor and ipad friendly.
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <a href="http://www.thecrealestate.com.au/">
+                            <span data-picture data-alt="The C Real Estate">
+                                <span data-src="images/thec-thumbnail.jpg"></span>
+                                <span data-src="images/thec-thumbnail-medium.jpg"
+                                      data-media="(min-width: 768px)"></span>
 
-						<p><strong>Scholarship Achievement</strong></p>
+                                <noscript>
+                                    <img src="images/thec-thumbnail.jpg" alt="The C Real Estate"></noscript>
+                                </noscript>
+                            </span>
+                </a>
+            </div>
 
-						<p>RMIT School of Computer Science and IT International Commencing Scholarship in 2011</p>
+            <div class="work-link">
+                <a href="http://www.thecrealestate.com.au/">The C Real Estate</a>
+            </div>
+            <div class="work-description hide">
+                Original Design and color scheme. Build with Codeignitor and ipad friendly.
+            </div>
+        </div>
+        <div class="work-item">
+            <div class="work-thumbnail">
+                <a href="http://www.multilink.com.au/webmultilink/">
+                            <span data-picture data-alt="Weblink">
+                                <span data-src="images/weblink-thumbnail.jpg"></span>
+                                <span data-src="images/weblink-thumbnail-medium.jpg"
+                                      data-media="(min-width: 768px)"></span>
 
-						<p>The 2nd price of scholarship for the comprehensive performance in 2010 in China</p>
-					</div>
-					<div class="tab-pane" id="working-experience">
-						<p><strong>Multilink System, Melbourne, May 2013 - Nov 2013, full-time web developer</strong></p>
-						<ul>
-							<li><a href="http://www.multilink.com.au">www.multilink.com.au</a></li>
-							<li>Build websites for real estate agents with existing database, including frontend and backend development.</li>
-							<li>Develop an in-house web-based CRM system with mobile friendly interface from the ground up. </li>
-						</ul>
-						<p><strong>Crystal Web Designs, Melbourne, Aug 2012 - May 2013,  full-time web developer</strong></p>
-						<ul>
-							<li><a href="http://crystalwebdesigns.com.au">www.crystalwebdesigns.com.au</a>
-							</li>
-							<li>Develop Magento template files to fit clients need.
-							</li>
-							<li>Construct web pages and email templates with html/css/jquery.
-							</li>
-							<li>Detect and fix bugs for clients’ websites.
-							</li>
-							<li>Build custom function for clients websites, for example, job alert functionality.</li>
-						</ul>
+                                <noscript>
+                                    <img src="images/weblink-thumbnail.jpg" alt="Weblink"></noscript>
+                                </noscript>
+                            </span>
+                </a>
+            </div>
 
-						<p><strong>HSBC, GuangZhou, China, July 2010 - Nov 2010, Trainee Software Engineer</strong></p>
-						<p>Develop middlewares using IBM  Websphere Broker, for example data transformation.</p>
-					</div>
+            <div class="work-link">
+                <a href="http://www.multilink.com.au/webmultilink/">Weblink</a>
+            </div>
+            <div class="work-description hide">
+                CRM system for real estate agents, built from the ground up with Codeignitor. Tablet and mobile
+                friendly.
+            </div>
+        </div>
+    </section>
+    <section id="resume">
+        <div class="container">
+            <h2 class="heading">MORE ABOUT ME</h2>
 
-					<div class="tab-pane" id="skills">
-							<p>PHP(3 years experience), composer, <strong>Codeignitor</strong> with best practice and mysql.
-</p>
-							<p>Html/css/javascript,  jQuery, bootstrap, Less/Lesshat, <strong>Sass/Compass</strong>, object-oriented <strong>javascript</strong>, <strong>responsive design</strong> with <strong>mobile-first</strong> methodology, Git and java.
-</p>
-							<p><strong>Angularjs/ bower/yeomen</strong>. Had applied angularjs into a real project.
-</p>
-							<p><strong>Magento</strong> operation skills such as adding custom attributes and adjusting email template, and template development skills.
-</p>
-							<p>Slice PSD files to web pages.
-</p>
-							<p>Unix-like system admin skills. 
-</p>
-					</div>
-				</div>
-			</section>
-		</div>
-		<script src="bower_components/jquery/jquery.min.js"></script>
-		<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	</body>
-	</html>
+            <ul class="nav nav-tabs row">
+                <li class="col-xs-4 active"><a href="#education" data-toggle="tab">Education</a></li>
+                <li class="col-xs-4"><a href="#working-experience" data-toggle="tab">Experience</a></li>
+                <li class="col-xs-4"><a href="#skills" data-toggle="tab">Skills</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="education"><p><strong>Royal Melbourne Institute of Technology,</strong>
+                </p>
+
+                    <p>Master Degree of Information Technology, March 2011 - June 2012, GPA 3.2 / 5.0</p>
+
+                    <p>South China Agricultural University</p>
+
+                    <p>Bachelor Degree of Software Engineer, GPA 3.0 / 5.0</p>
+
+                    <p><strong>Scholarship Achievement</strong></p>
+
+                    <p>RMIT School of Computer Science and IT International Commencing Scholarship in 2011</p>
+
+                    <p>The 2nd price of scholarship for the comprehensive performance in 2010 in China</p>
+                </div>
+                <div class="tab-pane" id="working-experience">
+                    <p><strong>Multilink System, Melbourne, May 2013 - Nov 2013, full-time web developer</strong></p>
+                    <ul>
+                        <li><a href="http://www.multilink.com.au">www.multilink.com.au</a></li>
+                        <li>Build websites for real estate agents with existing database, including frontend and backend
+                            development.
+                        </li>
+                        <li>Develop an in-house web-based CRM system with mobile friendly interface from the ground
+                            up.
+                        </li>
+                    </ul>
+                    <p><strong>Crystal Web Designs, Melbourne, Aug 2012 - May 2013, full-time web developer</strong></p>
+                    <ul>
+                        <li><a href="http://crystalwebdesigns.com.au">www.crystalwebdesigns.com.au</a>
+                        </li>
+                        <li>Develop Magento template files to fit clients need.
+                        </li>
+                        <li>Construct web pages and email templates with html/css/jquery.
+                        </li>
+                        <li>Detect and fix bugs for clients’ websites.
+                        </li>
+                        <li>Build custom function for clients websites, for example, job alert functionality.</li>
+                    </ul>
+
+                    <p><strong>HSBC, GuangZhou, China, July 2010 - Nov 2010, Trainee Software Engineer</strong></p>
+
+                    <p>Develop middlewares using IBM Websphere Broker, for example data transformation.</p>
+                </div>
+
+                <div class="tab-pane" id="skills">
+                    <p>PHP(3 years experience), composer, <strong>Codeignitor</strong> with best practice and mysql.
+                    </p>
+
+                    <p>Html/css/javascript, jQuery, bootstrap, Less/Lesshat, <strong>Sass/Compass</strong>,
+                        object-oriented <strong>javascript</strong>, <strong>responsive design</strong> with <strong>mobile-first</strong>
+                        methodology, Git and java.
+                    </p>
+
+                    <p><strong>Angularjs/ bower/yeomen</strong>. Had applied angularjs into a real project.
+                    </p>
+
+                    <p><strong>Magento</strong> operation skills such as adding custom attributes and adjusting email
+                        template, and template development skills.
+                    </p>
+
+                    <p>Slice PSD files to web pages.
+                    </p>
+
+                    <p>Unix-like system admin skills.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/picturefill/picturefill.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

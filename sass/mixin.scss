@@ -1,0 +1,8 @@
+@mixin zero(){
+  margin : 0;
+  padding : 0;
+}
+@mixin resizeAndCentre($width){
+  width : $width;
+  margin : auto;
+}

@@ -1,0 +1,109 @@
+@import "compass/css3";
+@import "mixin";
+@import "vars";
+
+$widthTablet : 768px;
+$siteTopPadding : 70px; // the space of the content to the top.
+$myselfHeight : 750px;// background image's height of the top section.
+$avatarWidth : 200px; // avatar width
+$circleWith : 120px; // circle width for social icons
+$fontSize : 27px; // general font size for the whole page.
+$workThumbnailPadding : 8px; // padding of a work thumbnail.
+
+
+@media screen and (min-width: $widthTablet) {
+  .circle{
+      width : $circleWith;
+      height: $circleWith;
+
+      .icon{
+        line-height: $circleWith;
+        &:hover{
+          @include scale(1.3);
+        }
+      }
+  }
+  body{
+    font-size: $fontSize;
+  }
+
+  #topBar{
+    display: none;
+    padding: none;
+  }
+
+  .content{
+    #myself{
+      height: $myselfHeight;
+
+      #myself-text{
+        color : #ffffff;
+        margin : 30px 0;
+        line-height: 1.5em;
+      }
+    }
+
+    .twitter{
+      margin : 0 40px;
+    }
+    .avatar{
+      width: $avatarWidth;
+      border : 8px solid $blueFlatShadow;
+    }
+
+    #myself{
+      @include zero();
+      padding-top : $siteTopPadding;
+    }
+
+    #myself-text{
+      p{
+        @include resizeAndCentre(70%);
+      }
+    }
+    #work{
+      padding-top : 80px;
+      padding-bottom : 40px;
+      background : $greenFlat;
+
+      .my-work-description{
+          @include resizeAndCentre(70%);
+          margin : 40px auto;
+      }
+      .work-thumbnail{
+        border : none;
+        background : $greenShadow;
+      }
+      .work-link{
+        font-size : 36px;
+        padding : 10px;
+        background : rgba(0,0,0,.5);
+        background: $greenShadow;
+        left : 28%;
+        min-width : 400px;
+        @include border-top-left-radius($borderRadius);
+        @include border-top-right-radius($borderRadius);
+
+        a{
+          &:hover{
+            color: $greenFlat;
+          }
+        }
+      }
+    }
+
+    #resume{
+      color : #000000;
+      .container{
+        max-width : $maxWidth;
+      }
+      .heading{
+        margin : 80px 0 60px;
+      }
+
+      .tab-content{
+        padding : 30px;
+      }
+    }
+  }
+}

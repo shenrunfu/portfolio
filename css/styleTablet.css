@@ -1,0 +1,113 @@
+@media screen and (min-width: 768px) {
+  /* line 15, ../sass/styleTablet.scss */
+  .circle {
+    width: 120px;
+    height: 120px;
+  }
+  /* line 19, ../sass/styleTablet.scss */
+  .circle .icon {
+    line-height: 120px;
+  }
+  /* line 21, ../sass/styleTablet.scss */
+  .circle .icon:hover {
+    -webkit-transform: scale(1.3, 1.3);
+    -moz-transform: scale(1.3, 1.3);
+    -ms-transform: scale(1.3, 1.3);
+    -o-transform: scale(1.3, 1.3);
+    transform: scale(1.3, 1.3);
+  }
+
+  /* line 26, ../sass/styleTablet.scss */
+  body {
+    font-size: 27px;
+  }
+
+  /* line 30, ../sass/styleTablet.scss */
+  #topBar {
+    display: none;
+    padding: none;
+  }
+
+  /* line 36, ../sass/styleTablet.scss */
+  .content #myself {
+    height: 750px;
+  }
+  /* line 39, ../sass/styleTablet.scss */
+  .content #myself #myself-text {
+    color: #ffffff;
+    margin: 30px 0;
+    line-height: 1.5em;
+  }
+  /* line 46, ../sass/styleTablet.scss */
+  .content .twitter {
+    margin: 0 40px;
+  }
+  /* line 49, ../sass/styleTablet.scss */
+  .content .avatar {
+    width: 200px;
+    border: 8px solid #266a7e;
+  }
+  /* line 54, ../sass/styleTablet.scss */
+  .content #myself {
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+  }
+  /* line 60, ../sass/styleTablet.scss */
+  .content #myself-text p {
+    width: 75%;
+    margin: auto;
+  }
+  /* line 64, ../sass/styleTablet.scss */
+  .content #work {
+    padding-top: 80px;
+    padding-bottom: 40px;
+    background: #68c39f;
+  }
+  /* line 69, ../sass/styleTablet.scss */
+  .content #work .my-work-description {
+    width: 75%;
+    margin: auto;
+    margin: 40px auto;
+  }
+  /* line 73, ../sass/styleTablet.scss */
+  .content #work .work-thumbnail {
+    border: none;
+    background: #25a278;
+  }
+  /* line 77, ../sass/styleTablet.scss */
+  .content #work .work-link {
+    font-size: 36px;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    background: #25a278;
+    left: 28%;
+    min-width: 400px;
+    -moz-border-radius-topleft: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  /* line 88, ../sass/styleTablet.scss */
+  .content #work .work-link a:hover {
+    color: #68c39f;
+  }
+  /* line 95, ../sass/styleTablet.scss */
+  .content #resume {
+    color: #000000;
+  }
+  /* line 97, ../sass/styleTablet.scss */
+  .content #resume .container {
+    max-width: 960px;
+  }
+  /* line 100, ../sass/styleTablet.scss */
+  .content #resume .heading {
+    margin: 80px 0 60px;
+  }
+  /* line 104, ../sass/styleTablet.scss */
+  .content #resume .tab-content {
+    padding: 30px;
+  }
+}
