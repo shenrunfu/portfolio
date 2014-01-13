@@ -2,6 +2,8 @@
 @import "mixin";
 @import "vars";
 
+
+
 *{
     box-sizing : border-box;
 }
@@ -19,7 +21,6 @@ a{
     @include border-radius($circleWith);
     text-align: center;
     display: inline-block;
-//    border: solid 1px #e5e5e5;
     background: $blueFlatLight;
     .icon{
         line-height : $circleWith;
@@ -55,7 +56,12 @@ body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .content{
     section{
         padding: $navHeight 25px 10px;
+        .container{
+          max-width: $maxWidth ;
+          padding: 0;
+        }
     }
+
     .sn{
         margin: 30px 0;
 
@@ -66,22 +72,23 @@ body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
     }
     #myself{
         text-align : center;
+
         height: $myselfHeight;
         padding : $myselfHeight/5 25px 10px;
-//        background : url('../images/header-bg.png') 0 0 repeat;
         background: $blueFlat;
         #myself-text{
-            color : $text-color;
+            color : #ffffff;
             margin-top : 15px;
         }
     }
     .avatar{
       width : $avatarWidth;
+      border : 4px solid $blueFlatShadow;
     }
 
     #work{
         text-align : center;
-
+        background : $greenFlat;
         .work-item{
             position : relative;
             margin : 0 0 10px 0 ;
@@ -89,9 +96,10 @@ body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
         }
 
         .work-thumbnail{
-          border: 1px solid $gray;
+//          border: 1px solid $gray;
+          border : none;
+          background : $greenShadow;
           @include border-radius($borderRadius);
-          background-color : #ffffff;
           padding : $workThumbnailPadding;
           img{
             max-width : $maxWidth;
@@ -102,17 +110,26 @@ body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 
         .work-link{
           position : absolute;
-          left : $workThumbnailPadding;
-          bottom: $workThumbnailPadding;
-
-          font-size: 20px;
+          bottom: 0;
+          padding : 10px;
           color: white;
+
+          background : rgba(0,0,0,.5);
+          background: $greenShadow;
+          left : 25%;
+          min-width: 130px;
+          @include border-top-left-radius($borderRadius);
+          @include border-top-right-radius($borderRadius);
+
 
           a{
             text-decoration: none;
             color : #ffffff;
             cursor:pointer;
 
+            &:hover{
+              color: $greenFlat;
+            }
           }
         }
     }
@@ -121,7 +138,7 @@ body,h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
         text-align : center;
         padding-top : 25px;
         background-color : #fff;
-
+        color : #000000;
         .nav-tabs{
             height : auto;
             @include zero();

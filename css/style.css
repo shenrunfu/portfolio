@@ -1,9 +1,9 @@
-/* line 5, ../sass/style.scss */
+/* line 7, ../sass/style.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 10, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 a:hover {
   cursor: pointer;
   -webkit-transition: all 0.2s ease-in-out;
@@ -13,7 +13,7 @@ a:hover {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 15, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 .circle {
   width: 65px;
   height: 65px;
@@ -26,7 +26,7 @@ a:hover {
   display: inline-block;
   background: #3cb0d3;
 }
-/* line 24, ../sass/style.scss */
+/* line 25, ../sass/style.scss */
 .circle .icon {
   line-height: 65px;
   color: #266a7e;
@@ -36,7 +36,7 @@ a:hover {
   -o-transition: all 0.2s ease-in-out 0s;
   transition: all 0.2s ease-in-out 0s;
 }
-/* line 29, ../sass/style.scss */
+/* line 30, ../sass/style.scss */
 .circle .icon:hover {
   -webkit-transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
@@ -45,19 +45,19 @@ a:hover {
   transform: scale(1.2, 1.2);
 }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 body {
   background-color: #f5f5f5;
   font-size: 14px;
   color: #ffffff;
 }
 
-/* line 40, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "Exo 2", Helvetica,Arial,sans-serif;
 }
 
-/* line 44, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 #topBar {
   height: 40px;
   border-bottom: solid 2px #327fc7;
@@ -65,91 +65,112 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -moz-box-shadow: #327fc7 0 0 10px;
   box-shadow: #327fc7 0 0 10px;
 }
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 #topBar .active {
   background-color: #327fc7;
 }
-/* line 51, ../sass/style.scss */
+/* line 52, ../sass/style.scss */
 #topBar a:hover {
   background: none;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .content section {
   padding: 40px 25px 10px;
 }
 /* line 59, ../sass/style.scss */
+.content section .container {
+  max-width: 960px;
+  padding: 0;
+}
+/* line 65, ../sass/style.scss */
 .content .sn {
   margin: 30px 0;
 }
-/* line 62, ../sass/style.scss */
+/* line 68, ../sass/style.scss */
 .content .sn .twitter {
   margin: 0 20px;
 }
-/* line 67, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 .content #myself {
   text-align: center;
   height: 400px;
   padding: 80px 25px 10px;
   background: #449bb5;
 }
-/* line 73, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 .content #myself #myself-text {
-  color: #444444;
+  color: #ffffff;
   margin-top: 15px;
 }
-/* line 78, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 .content .avatar {
-  width: 80px;
+  width: 100px;
+  border: 4px solid #266a7e;
 }
-/* line 82, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 .content #work {
   text-align: center;
+  background: #68c39f;
 }
-/* line 85, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .content #work .work-item {
   position: relative;
   margin: 0 0 10px 0;
   display: inline-block;
 }
-/* line 91, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .content #work .work-thumbnail {
-  border: 1px solid #dddddd;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  -o-border-radius: 5px;
-  border-radius: 5px;
-  background-color: #ffffff;
+  border: none;
+  background: #25a278;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   padding: 5px;
 }
-/* line 96, ../sass/style.scss */
+/* line 104, ../sass/style.scss */
 .content #work .work-thumbnail img {
   max-width: 960px;
   width: 100%;
   height: 100%;
 }
-/* line 103, ../sass/style.scss */
+/* line 111, ../sass/style.scss */
 .content #work .work-link {
   position: absolute;
-  left: 5px;
-  bottom: 5px;
-  font-size: 20px;
+  bottom: 0;
+  padding: 10px;
   color: white;
+  background: rgba(0, 0, 0, 0.5);
+  background: #25a278;
+  left: 25%;
+  min-width: 130px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
-/* line 111, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 .content #work .work-link a {
   text-decoration: none;
   color: #ffffff;
   cursor: pointer;
 }
-/* line 120, ../sass/style.scss */
+/* line 130, ../sass/style.scss */
+.content #work .work-link a:hover {
+  color: #68c39f;
+}
+/* line 137, ../sass/style.scss */
 .content #resume {
   text-align: center;
   padding-top: 25px;
   background-color: #fff;
+  color: #000000;
 }
-/* line 125, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 .content #resume .nav-tabs {
   height: auto;
   margin: 0;
@@ -157,12 +178,12 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-top: 20px;
   border-bottom: none;
 }
-/* line 131, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .content #resume .nav-tabs li {
   margin: 0;
   padding: 0;
 }
-/* line 133, ../sass/style.scss */
+/* line 150, ../sass/style.scss */
 .content #resume .nav-tabs li a {
   margin: 0;
   padding: 0;
@@ -182,40 +203,40 @@ body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 143, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .content #resume .nav-tabs li a:hover {
   background-color: #fff;
   border: solid 1px #327fc7;
   color: #327fc7;
 }
-/* line 150, ../sass/style.scss */
+/* line 167, ../sass/style.scss */
 .content #resume .nav-tabs li:first-child a {
-  -moz-border-radius-topleft: 5px;
-  -webkit-border-top-left-radius: 5px;
-  border-top-left-radius: 5px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
 }
-/* line 155, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .content #resume .nav-tabs li:last-child a {
-  -moz-border-radius-topright: 5px;
-  -webkit-border-top-right-radius: 5px;
-  border-top-right-radius: 5px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
 }
-/* line 161, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .content #resume .nav-tabs li.active a {
   color: white;
   background-color: #327fc7;
   border-color: #327fc7;
 }
-/* line 171, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .content .tab-content {
   border: 1px solid #dddddd;
   border-top: none;
   padding: 10px;
   text-align: left;
-  -moz-border-radius-bottomleft: 5px;
-  -webkit-border-bottom-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  -moz-border-radius-bottomright: 5px;
-  -webkit-border-bottom-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
